@@ -20,6 +20,25 @@ int main(void){
         this would transfer a int type to a long long type(a 64 bits number),then,
         the last 32 bits will be truncated，so it would be 0 if use a &u notation to dislpay. 
     */
-    return 0;
 
+    /* Let's see the difference between short, int, long, long long in a x86-64 machine */
+    /* These four data types' declaration*/
+    short short_integer;
+    int integer;
+    long long_integer;
+    long long ll_integer;
+
+    /* First, their size in memory */
+    printf("short data type's memory size in x86-64 machine %d.\n",sizeof(short_integer)); /* 2 bytes */
+    printf("int data type's memory size in x86-64 machine %d.\n",sizeof(integer));         /* 4 bytes */
+    printf("long data type's memory size in x86-64 machine %d.\n",sizeof(long_integer));   /* 4 bytes,same as int*/
+    printf("long long data type's memory size in x86-64 machine %d.\n",sizeof(ll_integer));/* 8 bytes */
+
+    /* Second, get each data type's largest number(signed),respectively */
+    printf("the largest number a short can represent %d.\n",sizeof(short_integer)); 
+    printf("int data type's memory size in x86-64 machine %d.\n",sizeof(integer));         
+    printf("long data type's memory size in x86-64 machine %d.\n",sizeof(long_integer));   
+    printf("long long data type's memory size in x86-64 machine %d.\n",sizeof(ll_integer));
+
+    return 0;
 }
