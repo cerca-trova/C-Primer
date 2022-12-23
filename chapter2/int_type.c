@@ -4,8 +4,8 @@ int main(void){
     
     /*int type demo*/
     unsigned int largest_integer_this_os_allowed = 4294967295; /* Representing 0xffffffff in hexadecimal,occupied a word (32 bits,4 bytes) in memory base on a x86-64 machine. */
-    printf("largest_integer_this_os_allowed size is %ld\n",sizeof(largest_integer_this_os_allowed)); // sizeof display the byte a int type occupied.
-    printf("The largest integer this os allowed %#x\n",largest_integer_this_os_allowed); //dispaly the largest unsigned integet in hexadecimal format.
+    printf("largest_integer_this_os_allowed size is %ld\n",sizeof(largest_integer_this_os_allowed)); // sizeof display the number of byte a int type occupied.
+    printf("The largest integer this os allowed %#x\n",largest_integer_this_os_allowed); //dispaly the largest unsigned integer in hexadecimal format.
 
     /* overflow of int type*/
     unsigned int int_overflow = largest_integer_this_os_allowed + 1;
