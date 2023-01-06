@@ -15,6 +15,7 @@ int main(void){
     the last 8 bits would be used. */
     char a_four_letter_char = 'FATE';
     
+    /* FATE, a four-letter char,but only E would be dispalyed. */
     printf("Only the last 8 bits would be used even we can assign multiple letter to a char. Here is the result :%c\n",a_four_letter_char);
     return 0;
 
